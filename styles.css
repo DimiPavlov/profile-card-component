@@ -1,0 +1,123 @@
+:root {
+  --main-bg-color: hsl(185, 75%, 39%);
+  --bg-color-very__dark__blue: hsl(229, 23%, 23%);
+  --bg-color-dark__grayish__blue: hsl(227, 10%, 46%);
+
+  --main-typography-color: hsl(0, 0%, 59%);
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --fz-small: 11px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: top -35rem left -10rem, bottom -35rem right -10rem;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 30rem;
+  height: 30rem;
+}
+
+.card__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  background-image: url(./images/bg-pattern-card.svg);
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card__middle {
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  background: white;
+}
+
+.card__bottom {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 0 0 15px 15px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  border: 5px solid white;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7rem;
+}
+
+.card__image {
+  position: relative;
+  transform: translate(4rem, 2rem);
+}
+
+.card__social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+span {
+  font-size: var(--fz-small);
+  letter-spacing: 1px;
+}
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+span,
+p {
+  color: var(--main-typography-color);
+  font-weight: var(--fw-normal);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5rem;
+}
